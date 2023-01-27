@@ -3,7 +3,7 @@ from entity.abstract_storage import AbstractStorage
 
 class Request:
 
-    def __int__(self, request: str, storages: dict[str, AbstractStorage]):
+    def __init__(self, request: str, storages: dict[str, AbstractStorage]):
         #Разделяем запрос пользователя по пробелу
         splitted_request = request.lower().split(' ')
         if len(splitted_request) != 7:

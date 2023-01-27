@@ -1,7 +1,8 @@
 from entity.shop import Shop
 from entity.store import Store
 from entity.request import Request
-from exception import RequestError
+from exception import RequestError, CourierError
+from entity.courier import Courier
 
 store = Store(items={
     "печенька": 25,

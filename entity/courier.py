@@ -1,8 +1,9 @@
-from abstract_storage import AbstractStorage
+from entity.abstract_storage import AbstractStorage
+from entity.request import Request
 
 class Courier:
 
-    def __init__(self, request: Request, storages: Dict[str, AbstractStorage]):
+    def __init__(self, request: Request, storages: dict[str, AbstractStorage]):
         self.__request = request
 
         #Проверяем существование точек отправления и прибытия
