@@ -23,4 +23,11 @@ class Courier:
         self.__to.add(name=self.__request.product, amount=self.__request.amount)
         print(f'Курьер доставил {self.__request.amount}{self.__request.product} в {self.__request.destination}')
 
+    def cancel(self):
+        self.__from.remove(name=self.__request.product, amount=self.__request.amount)
+        print(f'Курьер забрал {self.__request.amount}{self.__request.product} из {self.__request.departure}')
+
+        self.__from.add(name=self.__request.product, amount=self.__request.amount)
+        print(f'Курьер не смог доставить {self.__request.amount}{self.__request.product} в {self.__request.destination}')
+
 

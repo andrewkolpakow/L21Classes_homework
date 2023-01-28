@@ -1,4 +1,4 @@
-from exception import InvalidRequest
+from exception import InvalidRequest, InvalidStorageName
 from entity.abstract_storage import AbstractStorage
 
 class Request:
